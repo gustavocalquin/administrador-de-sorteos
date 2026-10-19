@@ -26,7 +26,8 @@ jobs:
           distribution: temurin
           java-version: '21'
       - name: Herramientas Android
-        run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
       - run: npm ci
       - run: npm run check
       - run: npx --no-install cap sync android

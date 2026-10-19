@@ -40,7 +40,8 @@ jobs:
         run: |
           node --input-type=module -e 'import fs from "node:fs"; const p = JSON.parse(fs.readFileSync("package.json", "utf8")); if (process.env.RELEASE_TAG !== "v" + p.version || p.license !== "MIT") process.exit(1);'
           test -s LICENSE
-      - run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+      - run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-36' 'build-tools;36.0.0'
       - run: npm ci
       - run: npm run check
       - run: npx --no-install cap sync android
