@@ -7,7 +7,8 @@ TypeScript, Capacitor y SQLite local.
 100 pruebas automatizadas, compilación web y Android aprobadas.
 Los recorridos principales fueron verificados en un teléfono Android real:
 persistencia, compartir/exportar, archivos, navegación, respaldo/restauración y
-el ciclo completo de un sorteo. La publicación en GitHub está en preparación.
+el ciclo completo de un sorteo. El código fuente está publicado en
+https://github.com/gustavocalquin/administrador-de-sorteos.
 
 ## Qué incluye
 
@@ -39,8 +40,8 @@ el ciclo completo de un sorteo. La publicación en GitHub está en preparación.
 
 Ticket, PDF e imagen pública de resultados quedan pospuestos para priorizar el
 núcleo. Etapa 6 prepara regresión, privacidad, licencia y distribución.
-La aplicación continúa como versión de prueba hasta completar la publicación y
-la validación de actualización con la firma permanente.
+La aplicación continúa como versión de prueba hasta completar la validación de
+actualización con la firma permanente.
 
 ## Documentación
 
@@ -95,8 +96,8 @@ La APK normal contiene la funcionalidad de etapas 1–5 y los ajustes de etapa 6
 Las APK anteriores existentes se conservaron.
 Existe una clave permanente local, excluida del repositorio, y una release firmada
 de comprobación. Su huella pública está documentada en `docs/FIRMA_ANDROID.md`.
-MIT está aprobada. Los workflows y la guía de firma están preparados; GitHub
-todavía no se ejecutó. No se promete identidad binaria entre máquinas.
+MIT está aprobada. El repositorio y los workflows están publicados; la guía de
+firma está preparada. No se promete identidad binaria entre máquinas.
 
 Para preparar otro equipo Windows están los scripts `prepare-android.ps1` e
 `install-android-sdk.ps1`. Descargan herramientas oficiales a `.tooling`; revisar
@@ -184,4 +185,5 @@ proceso, proveedores de archivos y rendimiento de copias grandes.
 
 MIT — Copyright (c) 2026 Gustavo Calquín. Ver [LICENSE](LICENSE).
 Cada dependencia conserva su licencia. Los avisos de los componentes se incluyen
-en las fuentes y en el APK. No hay repositorio remoto ni publicación en GitHub.
+en las fuentes y en el APK. El repositorio público es
+https://github.com/gustavocalquin/administrador-de-sorteos.

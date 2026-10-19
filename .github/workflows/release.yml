@@ -35,7 +35,7 @@ jobs:
       - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
         with:
           distribution: temurin
-          java-version: '21.0.12.1+1'
+          java-version: '21'
       - name: Comprobar versión y licencia
         run: |
           node --input-type=module -e 'import fs from "node:fs"; const p = JSON.parse(fs.readFileSync("package.json", "utf8")); if (process.env.RELEASE_TAG !== "v" + p.version || p.license !== "MIT") process.exit(1);'

@@ -4,8 +4,9 @@ Estado 2026-10-19: regresión de escritorio, compilación y recorrido principal 
 teléfono Android verificados por el titular. Persistencia, agenda, operaciones,
 archivos, imágenes, compartir/exportar, cierre, resultados, respaldo y
 restauración funcionaron correctamente. Existe una firma permanente y una release
-local firmada y verificada. Falta ejecutar los workflows en GitHub y comprobar
-una actualización entre dos releases firmadas con esa clave.
+local firmada y verificada. El repositorio público ya fue creado y el workflow
+de compilación se ejecuta en GitHub. Falta comprobar una actualización entre dos
+releases firmadas con esa clave.
 Usar datos ficticios en teléfono de prueba u otro equipo. No se requiere ni se
 autoriza reparar Windows o iniciar el emulador del equipo de desarrollo.
 
@@ -39,10 +40,10 @@ prueba con información que se quiera conservar.
 
 - Licencia MIT aprobada a nombre de Gustavo Calquín: resuelto.
 - Icono propuesto e identificador Android: aprobados para continuar.
-- Repositorio público: autorizado, conexión con GitHub pendiente.
+- Repositorio público: publicado en
+  https://github.com/gustavocalquin/administrador-de-sorteos.
 - Clave permanente: creada y verificada; falta guardar una segunda copia segura.
-- Ejecutar workflows en GitHub y revisar resultados reales; hasta entonces son
-  configuración preparada, no ejecuciones acreditadas.
+- Revisar los resultados reales de los workflows de GitHub después de cada cambio.
 - Verificar SHA256 y certificado del APK exacto que se distribuirá.
 - Publicar solo después de revisar los pendientes y el estado de prueba/estable.
 

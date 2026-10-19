@@ -1,8 +1,8 @@
 # Compilación y distribución
 
-La entrega 0.7.0 sigue siendo una **preversión de prueba**. La publicación del
-repositorio fue autorizada; todavía no existe un remoto ni una Release. Los
-workflows están preparados y falta ejecutarlos en GitHub.
+La entrega 0.7.0 sigue siendo una **preversión de prueba**. El repositorio público
+está disponible en https://github.com/gustavocalquin/administrador-de-sorteos.
+Todavía no existe una Release pública.
 
 Los workflows pasaron actionlint 1.7.7. La variante release sin firmar también
 compiló localmente, incluyendo `lintVitalRelease`. La revisión completa
@@ -54,10 +54,11 @@ respaldos, claves, herramientas, cachés, APK, pruebas de reparación Windows,
 conversaciones, registro interno de progreso y evidencias del equipo.
 Los originales de esos documentos permanecen en el proyecto local.
 
-Para crear el repositorio público futuro, extraer este ZIP en una carpeta nueva,
-revisarlo y versionar esa carpeta. No usar `git add .` sobre el espacio de trabajo
-histórico sin revisar sus archivos personales. El ZIP contiene código, pruebas,
-Gradle Wrapper, licencia, avisos de terceros y documentación pública.
+El repositorio inicial se creó con el mismo conjunto explícito incluido en este
+ZIP. Para una revisión independiente, extraerlo en una carpeta nueva y comparar
+su contenido. No usar `git add .` sobre el espacio de trabajo histórico sin
+revisar sus archivos personales. El ZIP contiene código, pruebas, Gradle Wrapper,
+licencia, avisos de terceros y documentación pública.
 
 ## Workflows preparados
 
@@ -97,7 +98,7 @@ Se registra código fuente por commit/tag, versiones, resultados, hash del APK
 y certificado. Se comprueba que los recursos del APK coinciden con el build web.
 Esto permite reconstruir e inspeccionar; **no se ha demostrado identidad binaria
 bit a bit entre máquinas**. Las firmas y el entorno pueden cambiar el APK.
-Tampoco se ha ejecutado aún el workflow en los runners de GitHub.
+El workflow de compilación se ejecuta en los runners de GitHub con cada envío.
 
 Las dependencias conservan sus licencias: ver `public/THIRD_PARTY_NOTICES.txt`.
 La licencia MIT aprobada para este proyecto no cambia las de los componentes.
